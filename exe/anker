@@ -1,0 +1,21 @@
+require "anker"
+include Anker
+
+BANNER = <<~EOF
+  ~ Anker v#{Anker::VERSION} ~ Anki CSV generator
+  see https://github.io/nvoynov/anker
+
+  Usage:
+    anker FILENAME
+EOF
+
+source = ARGV.shift
+unless source
+  puts BANNER
+  # puts Gem.loaded_specs['anker'].description
+  exit
+end
+
+target = File.basename(source, File.extname(source))
+notes = Parse.(source)
+Write.(target, notes)

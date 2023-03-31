@@ -1,0 +1,32 @@
+% Proper Anker file
+
+# the simplest basic form
+face
+back
+
+# basic and optionally reversible
+face
+back 1
+back 2
+y
+
+# basic and optionally reversible  
+face
+back 1
+back 2
+n
+
+face
+back 1
+- item 1
+- item 2
+back 2
+- item 1
+- item 2
+
+# cloze with only face
+race {{c1::racing::race}} and {{c2::pricing::price}}
+
+# cloze with face and back
+face {{c1::facing::face}}
+back

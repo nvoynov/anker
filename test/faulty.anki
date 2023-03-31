@@ -1,0 +1,9 @@
+% Faulty
+
+# cloze cannot be reversible
+face {{c1::racing::race}} and {{c2::pricing::price}}
+back
+y
+
+# back should be presented
+face
